@@ -61,13 +61,13 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
