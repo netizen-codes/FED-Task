@@ -1,0 +1,8 @@
+:root{
+    &:not(.dark){
+        @include token(map-get($colors, light), color);
+    }
+    &.dark{
+        @include token(map-get($colors, dark), color);
+    }
+}

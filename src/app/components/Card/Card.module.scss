@@ -1,0 +1,207 @@
+/* ------------------------------------ *\
+    #CARD   
+\* ------------------------------------ */
+
+
+.__ {
+    &wrap {
+        @include center-content("flex");
+        position: relative;
+        padding: 5.5rem 3rem;
+        min-width: 29rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        background-color: var(--color-background-negative);
+        flex-direction: column;
+        text-align: center;
+        text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+        color: var(--color-text-negative);
+        cursor: default;
+
+
+        @include mq("0", "portrait") {
+            max-height: calc(100vh - 5.4rem);
+            min-height: 47.7rem;
+        }
+
+        &[data-flip="false"] {
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+            }
+
+            &::before {
+                @extend %background--shadow;
+                opacity: .4;
+            }
+
+            &::after {
+                @extend %background--overlay;
+                opacity: .2;
+            }
+
+            .__ {
+                &text {
+                    max-width: 70rem;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        &[data-flip="true"] {
+            transition:
+                justify-content 0.6s ease-in 0.4s,
+                box-shadow 0.6s ease-in;
+
+            .__ {
+                &figure {
+                    img {
+                        transition: filter 0.6s ease-in 0s;
+                    }
+
+                    &::after {
+                        transition: opacity 0.6s ease-in 0s;
+                    }
+                }
+
+                &header {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transition: flex 0.6s ease-in 0.4s;
+                }
+
+                &content {
+                    opacity: 0;
+                    max-height: 0;
+                    max-width: 40rem;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    transition:
+                        max-height 0.6s ease-in 0.2s,
+                        opacity .6s ease-in-out 0s;
+
+                }
+
+                &text {
+                    line-height: 1.2;
+                    margin: 4rem 0;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:has(button:focus) {
+                justify-content: flex-start;
+                transition-delay: 0.0s;
+                box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
+
+                .__ {
+                    &figure {
+                        img {
+                            filter: blur(0.4rem);
+                            transition-delay: 0.4s;
+                        }
+
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+
+                    &header {
+                        flex: 0;
+                        transition-delay: 0.0s;
+                    }
+
+                    &content {
+                        opacity: 1;
+                        max-height: 100%;
+                        transition:
+                            max-height 0.6s ease-in 0s,
+                            opacity .6s ease-in-out 0.4s;
+                    }
+                }
+            }
+        }
+    }
+
+    &figure {
+        pointer-events: none;
+
+        &,
+        &::before,
+        &::after,
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &,
+        img {
+            z-index: 1;
+            object-fit: cover;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            z-index: 2;
+        }
+
+        &::before {
+            @extend %background--shadow;
+        }
+
+        &::after {
+            @extend %background--overlay;
+        }
+
+        ~* {
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    &note {
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        font-weight: 400;
+        font-size: 1.9rem;
+    }
+
+    &title {
+        font-size: 3.7rem;
+        text-transform: uppercase;
+        margin-top: 0.7rem;
+    }
+
+    &logo {
+        display: block;
+        width: 35.6rem;
+        max-width: calc(100% - 6rem);
+        height: auto;
+        margin: 2.7rem auto;
+    }
+
+    &text {
+        @include max-lines(5);
+        font-size: 2.1rem;
+        font-weight: 400;
+    }
+}

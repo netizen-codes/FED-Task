@@ -1,0 +1,30 @@
+.button {
+    &--primary ,
+    &--secondary ,
+    &--tertiary {
+        height: 5.3rem;
+        width: 17.4rem;
+        margin: 0 auto;
+        border: 0.1rem solid #fff;
+        border-radius: 0.6rem;
+        background: transparent;
+        color: #fff;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin-bottom: .9rem;
+        transition: 
+            background-color 0.3s ease-in 0s,
+            box-shadow 0.3s ease-in 0s;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/* BACKGROUND */
+
+%background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--shadow {
+        @extend %background;
+        background-image: radial-gradient(circle, transparent 0%, rgba(0, 0, 0, .8) 95%),
+    }
+    &--overlay {
+        @extend %background;
+        background-image: linear-gradient(to right, rgba(125, 125, 125, .7), rgba(125, 125, 125, .7));
+        opacity: .6;
+    }
+}

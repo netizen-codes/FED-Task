@@ -1,0 +1,38 @@
+/* TEXT */
+
+%text {
+  &--title {
+    font-weight: 500;
+  }
+
+  &--h1 {
+    margin-bottom: var(--margin-lg);
+    font-size: var(--text-xl);
+  }
+
+  &--h2,
+  &--h3,
+  &--h4,
+  &--h5,
+  &--h6 {
+    font-size: var(--text-lg);
+  }
+
+  &--content {
+    font: 400 1.6rem "Roboto", sans-serif;
+  }
+
+  &--small {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  &--link {
+    text-decoration: none;
+  }
+
+  &--button,
+  &--field{
+    font: 300 1.6rem "Roboto", sans-serif;
+  }
+}

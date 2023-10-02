@@ -1,0 +1,14 @@
+/* TOKEN */
+
+@mixin token($map, $prefix) {
+
+  @each $name, $value in $map {
+    @if type-of($value)==map {
+      @include token($value, $prefix + naming($name));
+    }
+
+    @else {
+      --#{$prefix + naming($name)}: #{$value};
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+    "department":{
+       "name":"Front-End",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"image":"https://c1.wallpaperflare.com/preview/388/339/761/hawaii-sailing-boat-sunset-beach.jpg"
+    },
+    "offices":[
+       {
+          "country":"Italy",
+          "city":"Venice",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"id":"1",
+"image":"https://tourkeeropa.com/wp-content/uploads/2018/07/Bridge-of-Sighs.jpeg"
+       },
+       {
+          "country":"Germany",
+          "city":"Berlin",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"id":"2",
+"image":"https://aws-tiqets-cdn.imgix.net/images/content/cae4bc5ad63244419cc13734d2bd6dc6.jpg"
+       },
+       {
+          "country":"Spain",
+          "city":"Barcelona",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"id":"3",
+"image": "https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/020/484/medium/d0531471711b367b94abfd4dbc29e6ae/spain-barcelona-sagrada-familia-080416-az.jpg"
+       },
+       {
+          "country":"France",
+          "city":"Paris",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"id":"4",
+"image":"https://as1.ftcdn.net/v2/jpg/01/70/58/92/1000_F_170589233_65jydTJ365ZlCtsFyenQ0f3HH5TeE16A.jpg"
+       },
+       {
+          "country":"Netherlands",
+          "city":"Amsterdam",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"id":"5",
+"image": "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/10/Prinsengracht-Canal-Amsterdam.jpg"
+       },
+       {
+          "country":"United Kingdom",
+          "city":"London",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis in enim eu efficitur. Ut hendrerit suscipit magna, nec posuere leo aliquam quis",
+"id":"6",
+"image":"https://www.travelbook.de/data/uploads/2017/11/gettyimages-561223621_1511435512-1040x690.jpg"
+       }
+    ]
+ }

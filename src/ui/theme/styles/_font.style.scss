@@ -1,0 +1,7 @@
+/* FONT */
+
+@each $type, $font in $typo {
+    @each $weight in map-get($font, "weight"){
+        @include font-face(map-get($font, "family"), $weight);
+    }
+}

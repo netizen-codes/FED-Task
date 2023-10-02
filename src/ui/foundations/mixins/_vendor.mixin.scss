@@ -1,0 +1,15 @@
+/* VENDOR */
+
+@mixin prefix($property, $value, $position: "property", $prefixes: (webkit moz ms)) {
+    @each $prefix in $prefixes {
+        @if ($position=="value") {
+            #{$property}: #{'-' + $prefix + '-' + $value};
+        }
+
+        @else {
+            #{'-' + $prefix + '-' + $property}: $value;
+        }
+    }
+
+    #{$property}: $value;
+}

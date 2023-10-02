@@ -1,0 +1,27 @@
+/* COLOR - VAR */
+
+// BRANDING
+$color-blue: #4863F0;
+$color-blue-lighten: #{lighten($color-blue, 35%)};
+$color-coral: #E769AA;
+$color-coral-lighten: #{lighten($color-coral, 30%)};
+$color-purple: #3B3B9E;
+$color-purple-lighten: #{lighten($color-purple, 52%)};
+
+// SIGNALS
+$color-yellow: #FFB921;
+$color-yellow-lighten: #{lighten($color-yellow, 38%)};
+$color-red: #FF919A;
+$color-red-lighten: #{lighten($color-red, 18%)};
+$color-green: #10CCBB;
+$color-green-lighten: #{lighten($color-green, 52%)};
+$color-gray: #9DA6BD;
+$color-gray-lighten: #{lighten($color-gray, 25%)};
+
+// NEUTRAL
+$color-darkest: #0B122E;
+$color-darker: #181F3A;
+$color-dark: #667196;
+$color-light: #EAEEFB;
+$color-lighter: #FAFBFD;
+$color-lightest: #ffffff;

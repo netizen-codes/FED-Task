@@ -1,0 +1,71 @@
+/* GET */
+
+// BREACKPOINTS - bp(a)
+// a: 'desktop', 'laptop', 'landscape', 'portrait', 'mobile'
+@function bp($key) {
+    @return map-get($bp, $key);
+  }
+  
+  // GRID - grid(a)
+  // a: 'gutter', 'column'
+  @function grid($key) {
+    @return map-get($grid, $key);
+  }
+  
+  // GUTTER - gutter(a)
+  // a: 'h-desk', 'h-mobile', 'v-desk', 'v-mobile'
+  @function gutter($key) {
+    @return map-get($gutter, $key);
+  }
+  
+  // RADIUS - radius(a)
+  // a: 's', 'm', 'l'
+  @function radius($key) {
+    @return map-get($radius, $key);
+  }
+  
+  // BRAND - brand(a)
+  // a: 'width', 'height'
+  @function brand($key) {
+    @return map-get($brand, $key);
+  }
+  
+  // COLORS - color(a, b)
+  // a: 'primary', 'secondary', 'dark', 'light', 'red', 'green'
+  @function color($key) {
+    @return map-get($colors, $key);
+  }
+  
+  
+  
+  // COLORS - color(a, b)
+  // a: 'primary', 'secondary', 'dark', 'light', 'red', 'green'
+  @function color($map, $key) {
+    @return map-get($map, $key);
+  }
+  
+  // FONTS
+  // font-family(a)
+  // a: 'heading', 'contents', 'icons'
+  @function font-family($key) {
+    $map: map-get($fonts, $key) or map-get($fonts, "contents");
+    @return map-get($map, "family");
+  }
+  
+  //font-weight(a, b)
+  // a: 'heading', 'contents', 'icons'
+  // b: 'light', 'regular', 'bold', 'semibold', 'semilight'
+  @function font-weight($key, $weight) {
+    $map: map-get($fonts, $key) or map-get($fonts, "contents");
+    @return map-get(map-get($map, "weight"), $weight);
+  }
+  
+  // ICONS - icon(a)
+  // a: 'heart', 'avatar', 'lens', 'bag',
+  //    'arrow-left', 'arrow-right', 'arrow-up', 'arrow-down',
+  //    'bin', 'burger', 'lock', 'minus', 'pen', 'tick'
+  @function icon($key) {
+    @return map-get($icons, $key);
+  }
+  
+  

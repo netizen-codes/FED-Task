@@ -1,0 +1,46 @@
+/* SET */
+
+
+//  STRING REPLACE
+@function str-replace($string, $search: " ", $replace: "") {
+  $index: str-index($string, $search);
+  @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace +
+    str-replace(
+      str-slice($string, $index + str-length($search)),
+      $search,
+      $replace
+    );
+  }
+  @return $string;
+}
+
+// LIST ITEM FINDING
+@function first($list) {
+  @return nth($list, 1);
+}
+
+@function last($list) {
+  @return nth($list, length($list));
+}
+
+// FONTS URL
+@function font-url($family, $weight) {
+  //$fontFamily: to-lower-case(str-replace($family));
+  $fontFamily: str-replace($family);
+  $fontWeight: "";
+
+  @if (first($weight) != "normal") {
+      $weightInit: first($weight);
+      $weightFinal: str-insert(str-slice($weightInit, 2), to-upper-case(str-slice($weightInit, 1, 1)), 1);
+      $fontWeight: "-" + $weightFinal;
+  }
+
+  @return "./../../assets/fonts/" + $fontFamily + "/" + $fontFamily + $fontWeight;
+}
+
+
+// NAME
+@function naming($name, $separator:'-'){
+  @return if($name != 'default', $separator+$name, ''); 
+}

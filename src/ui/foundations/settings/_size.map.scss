@@ -1,0 +1,34 @@
+/* SIZE - MAP */
+
+$bp: (
+    "desktop": 1980px,
+    "laptop": 1280px,
+    "landscape": 1024px,
+    "portrait": 800px,
+    "mobile-height": 640px,
+    "mobile": 374px,
+) !default;
+
+$default-bp: (
+    //Mobile
+    "s": (
+        "min-width": "0",
+        "max-width": "portrait",
+    ),
+    //Tablet
+    "m": (
+        "min-width": "portrait",
+        "max-width": "landscape",
+    ),
+    //Desk
+    "l": (
+        "min-width": "landscape",
+        "max-width": "desktop",
+    ),
+    //Large
+    "xl": (
+        "min-width": "desktop",
+        "max-width": "none",
+    )
+) !default;
+

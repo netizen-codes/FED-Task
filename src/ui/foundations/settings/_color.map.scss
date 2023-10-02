@@ -1,0 +1,228 @@
+/* COLOR - MAP */
+
+
+$colors: (
+    // LIGHT
+
+    light: (
+        //brand: (
+            primary: (
+                default: $color-blue,
+                light: $color-blue-lighten,
+            ),
+            secondary: (
+                default: $color-coral,
+                light: $color-coral-lighten,
+            ),
+            tertiary: (
+                default: $color-purple,
+                light: $color-purple-lighten,
+            ),
+        //),
+
+        //semantic: (
+            warning: (
+                default: $color-yellow,
+                light: $color-yellow-lighten,
+            ),
+            danger: (
+                default: $color-red,
+                light: $color-red-lighten,
+            ),
+            safe: (
+                default: $color-green,
+                light: $color-green-lighten,
+            ),
+            disabled: (
+                default: $color-gray,
+                light: $color-gray-lighten,
+            ),
+        //),
+
+        //neutral: (
+            '000': $color-lightest,
+            '100': $color-lighter,
+            '300': $color-light,
+            '500': $color-dark,
+            '700': $color-darker,
+            '900': $color-darkest,
+        //),
+
+        background: (
+            body: var(--color-100),
+            content: var(--color-000),
+            overlay: var(--color-700),
+            negative: var(--color-900),
+        ),
+
+        border: (
+            default: var(--color-300),
+            accent: var(--color-primary),
+        ),
+
+        text:(
+            content: var(--color-500),
+            accent: var(--color-700),
+            title: var(--color-700),
+            negative: var(--color-000),
+        ),
+
+        flag:(
+            primary: (
+                bg: var(--color-primary),
+                txt: var(--color-000),
+            ),
+            secondary: (
+                bg: var(--color-secondary),
+                txt: var(--color-000),
+            ),
+        ),
+
+        button: (
+            primary: (
+                //default: (
+                    bg: var(--color-primary),
+                    txt: var(--color-000),
+                    border: var(--color-primary),
+                //),
+                hover: (
+                    bg: var(--color-primary),
+                    txt: var(--color-000),
+                    border: var(--color-primary),
+                ),
+                focus: (
+                    bg: var(--color-primary),
+                    txt: var(--color-000),
+                    border: var(--color-primary),
+                ),
+                active: (
+                    bg: var(--color-primary),
+                    txt: var(--color-000),
+                    border: var(--color-primary),
+                ),
+                disabled: (
+                    bg: var(--color-disabled-light),
+                    txt: var(--color-disabled),
+                    border: var(--color-disabled-light),
+                ),
+            ),
+            
+            secondary: (
+                default: (
+                    bg: var(--color-primary-light),
+                    txt: var(--color-primary),
+                    border: var(--color-primary-light),
+                ),
+                hover: (
+                    bg: var(--color-primary-light),
+                    txt: var(--color-primary),
+                    border: var(--color-primary-light),
+                ),
+                focus: (
+                    bg: var(--color-primary-light),
+                    txt: var(--color-primary),
+                    border: var(--color-primary-light),
+                ),
+                active: (
+                    bg: var(--color-primary-light),
+                    txt: var(--color-primary),
+                    border: var(--color-primary-light),
+                ),
+                disabled: (
+                    bg: var(--color-dsabled-light),
+                    txt: var(--color-diabled),
+                    border: var(--color-disabled-light),
+                ),
+            ),
+
+            tertiary: (
+                default: (
+                    bg: transparent,
+                    txt: var(--color-primary),
+                    border: transparent,
+                ),
+                hover: (
+                    bg: transparent,
+                    txt: var(--color-primary),
+                    border: transparent,
+                ), 
+                focus: (
+                    bg: transparent,
+                    txt: var(--color-primary),
+                    border: transparent,
+                ), 
+                active: (
+                    bg: transparent,
+                    txt: var(--color-primary),
+                    border: transparent,
+                ),
+                disabled: (
+                    bg: transparent,
+                    txt: var(--color-primary),
+                    border: transparent,
+                ),
+            ),
+
+            delete: (
+                default: (
+                    bg: var(--color-danger-light),
+                    txt: var(--color-danger),
+                    border: var(--color-danger-light),
+                ),
+                hover: (
+                    bg: var(--color-danger-light),
+                    txt: var(--color-danger),
+                    border: var(--color-danger-light),
+                ),
+                focus: (
+                    bg: var(--color-danger-light),
+                    txt: var(--color-danger),
+                    border: var(--color-danger-light),
+                ),
+                active: (
+                    bg: var(--color-danger-light),
+                    txt: var(--color-danger),
+                    border: var(--color-danger-light),
+                ),
+                disabled: (
+                    bg: var(--color-danger-light),
+                    txt: var(--color-danger),
+                    border: var(--color-danger-light),
+                ),
+            ),
+        ),
+
+        field: (
+            //deafult : (
+                bg: $color-lightest,
+                placeholder: $color-light,
+                txt: $color-dark,
+                border: $color-light,
+            //),
+            invalid : (
+                bg: $color-lightest,
+                placeholder: $color-light,
+                txt: $color-dark,
+                border: $color-red,
+            ),
+            valid: (
+                bg: $color-lightest,
+                placeholder: $color-light,
+                txt: $color-dark,
+                border: $color-green,
+            ),
+            disabled: (
+                bg: $color-lightest,
+                placeholder: $color-light,
+                txt: $color-dark,
+                border: $color-gray,
+            ),
+        ),
+    ),
+
+
+    // DARK
+
+    dark: (
+    )
+);

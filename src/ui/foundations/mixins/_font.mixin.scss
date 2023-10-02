@@ -1,0 +1,16 @@
+/* FONT */
+
+// FONTS FACE
+@mixin font-face($family, $weight) {
+    @font-face {
+        font-family: $family;
+        src: url(font-url($family, $weight) + ".eot") format("embedded-opentype");
+        src: url(font-url($family, $weight) + ".eot#iefix") format("embedded-opentype"),
+            url(font-url($family, $weight) + ".ttf") format("truetype"),
+            url(font-url($family, $weight) + ".woff2") format("woff2"),
+            url(font-url($family, $weight) + ".woff") format("woff"),
+            url(font-url($family, $weight) + ".svg#" + to-lower-case(str-replace($family))) format("svg");
+        font-weight: last($weight);
+        font-display: swap;
+    }
+}

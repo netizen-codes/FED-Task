@@ -1,0 +1,66 @@
+/* LAYOUT */
+
+// MAX LINES
+@mixin max-lines($num) {
+  @if ($num !=1) {
+    display: -webkit-box !important;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+  }
+
+  @else {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  overflow: hidden;
+}
+
+
+// CENTER
+@mixin center-content($display: 'grid') {
+  @if $display =='flex' {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @else if $display =='inline-flex' {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @else if $display =='grid' {
+    display: grid;
+    place-content: center;
+  }
+
+  @else if $display =='inline-grid' {
+    display: inline-grid;
+    place-content: center;
+  }
+}
+
+@mixin center-container($display: 'absolute') {
+  @if $display =='absolute' {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+}
+
+
+// PADDINGS
+@mixin padding($side, $size) {
+  %layout {
+    &--padding {
+      &--xs {
+        padding: var(--size-padding-xs);
+      }
+    }
+  }
+}
