@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/FED-Task/static/css/main.5207878c.css",
+    "main.js": "/FED-Task/static/js/main.138874cc.js",
+    "static/js/787.28cb0dcd.chunk.js": "/FED-Task/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Roboto-Bold.svg": "/FED-Task/static/media/Roboto-Bold.db0ad23d6e7515e54e4b.svg",
+    "static/media/Roboto-Medium.svg": "/FED-Task/static/media/Roboto-Medium.9bd0fe17cc229aee86a1.svg",
+    "static/media/Roboto-Light.svg": "/FED-Task/static/media/Roboto-Light.ac748133d560f641302d.svg",
+    "static/media/Roboto-Regular.svg": "/FED-Task/static/media/Roboto-Regular.301c6f66ced2872e6087.svg",
+    "static/media/Roboto-Regular.eot": "/FED-Task/static/media/Roboto-Regular.a0a70ade7326bbafe494.eot",
+    "static/media/Roboto-Regular.ttf": "/FED-Task/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
+    "static/media/Roboto-Bold.eot": "/FED-Task/static/media/Roboto-Bold.056ecee6e5cb26fc62a1.eot",
+    "static/media/Roboto-Bold.ttf": "/FED-Task/static/media/Roboto-Bold.4f39c5796e60c9d8e732.ttf",
+    "static/media/Roboto-Medium.eot": "/FED-Task/static/media/Roboto-Medium.f23b8a26f88f9bd19d74.eot",
+    "static/media/Roboto-Medium.ttf": "/FED-Task/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Light.eot": "/FED-Task/static/media/Roboto-Light.cade3e3390037f2b8e06.eot",
+    "static/media/Roboto-Light.ttf": "/FED-Task/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
+    "static/media/Roboto-Medium.woff": "/FED-Task/static/media/Roboto-Medium.2d25388525fab3c0aeff.woff",
+    "static/media/Roboto-Bold.woff": "/FED-Task/static/media/Roboto-Bold.46b382069d6de7c5b0f9.woff",
+    "static/media/Roboto-Regular.woff": "/FED-Task/static/media/Roboto-Regular.19030d54abbf3435f76e.woff",
+    "static/media/Roboto-Light.woff": "/FED-Task/static/media/Roboto-Light.228b5d901f75b361f889.woff",
+    "static/media/Roboto-Medium.woff2": "/FED-Task/static/media/Roboto-Medium.c968c2653e277f3a527f.woff2",
+    "static/media/Roboto-Regular.woff2": "/FED-Task/static/media/Roboto-Regular.0cf65693114d8617e1e2.woff2",
+    "static/media/Roboto-Bold.woff2": "/FED-Task/static/media/Roboto-Bold.2b0452b11a04f73513df.woff2",
+    "static/media/Roboto-Light.woff2": "/FED-Task/static/media/Roboto-Light.9757968771f3cac6b3c9.woff2",
+    "static/media/icomoon.svg": "/FED-Task/static/media/icomoon.8c01200f73674db4c85d.svg",
+    "static/media/icomoon.eot": "/FED-Task/static/media/icomoon.32c0510062b7b746ee0e.eot",
+    "static/media/icomoon.woff": "/FED-Task/static/media/icomoon.23b804821a170390ba47.woff",
+    "static/media/icomoon.ttf": "/FED-Task/static/media/icomoon.588aa2934f91b2a6781a.ttf",
+    "static/media/icomoon.woff2": "/FED-Task/static/media/icomoon.e18fad08a75981a7a06b.woff2",
+    "static/media/valtech-logo.svg": "/FED-Task/static/media/valtech-logo.4939641c8a8269f6247ad01fe68f08c2.svg",
+    "index.html": "/FED-Task/index.html",
+    "main.5207878c.css.map": "/FED-Task/static/css/main.5207878c.css.map",
+    "main.138874cc.js.map": "/FED-Task/static/js/main.138874cc.js.map",
+    "787.28cb0dcd.chunk.js.map": "/FED-Task/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5207878c.css",
+    "static/js/main.138874cc.js"
+  ]
+}
